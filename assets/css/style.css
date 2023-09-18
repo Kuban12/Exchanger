@@ -527,8 +527,8 @@ body {
 
 .about-shape-2 {
   display: block;
-  bottom: -100px;
-  left: -60px;
+  bottom: 0px;
+  left: 10px;
   animation: bounce 2.5s infinite;
 }
 
@@ -539,9 +539,9 @@ body {
   80%,
   100% { transform: translateY(0); }
 
-  40% { transform: translateY(-30px); }
+  40% { transform: translateY(-20px); }
 
-  60% { transform: translateY(-15px); }
+  60% { transform: translateY(-10px); }
 }
 
 .about :is(.section-subtitle, .section-title, .section-text) {
@@ -726,11 +726,6 @@ body {
   100% { box-shadow: 0 0 0 20px transparent; }
 }
 
-.video-banner::after {
-  inset: 0;
-  background-color: var(--black_30);
-}
-
 
 
 
@@ -758,8 +753,23 @@ body {
   text-transform: uppercase;
 }
 
+.footlogo{
+  display: flex;
+  width: 100%;
+}
+.footlogoimg{
+  width: 70%;
+}
 
-
+.curs{
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  font-weight: 800;
+  color: #0f7200
+}
 
 
 /*-----------------------------------*\
